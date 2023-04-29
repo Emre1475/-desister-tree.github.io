@@ -50,7 +50,7 @@ body, p {
 	color: #555; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;;
 }
-
+  
 .p-large {
 	font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
 }
@@ -2141,3 +2141,21 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+/* downlaod ic animation start */
+.download_ic img {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .download_ic img:hover {
+	transform: scale(1.2);
+	opacity: 50%;
+  }
+  /* downlaod ic animation end */
+  .img-wrapper:hover img {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+.img-wrapper img {
+    transform: scale(1.0);
+    transition: all 0.5s ease-out;
+}
