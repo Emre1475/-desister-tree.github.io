@@ -657,12 +657,13 @@ input[type='checkbox'] {
 .navbar-custom .container {
 	max-width: 87.5rem;
 }
-
+.navbar-custom .container:hover {
+	max-width: 87.5rem;
+}
 .navbar-custom .navbar-brand.logo-image img {
     width: 4.4375rem;
 	height: 1.75rem;
 }
-
 .navbar-custom .navbar-brand.logo-text {
 	font: 700 2rem/1.5rem "Open Sans", sans-serif;
 	color: #fff;;
@@ -813,9 +814,13 @@ input[type='checkbox'] {
 	border-color: #f3f7fd;
 	background-color: #f3f7fd;
 	color: #00c363;
+	transition: all 0.5s ease-out;
+	transform: scale(1.0);
 }
 
 .header .btn-solid-lg:hover {
+	transition: all 0.5s ease-out;
+	transform: scale(1.1);
 	background: transparent;
 	color: #f3f7fd;
 }
@@ -1112,7 +1117,6 @@ input[type='checkbox'] {
 .basic-2 .video-wrapper {
 	position: relative;
 }
-
 /* Video Play Button */
 .basic-2 .video-play-button {
 	position: absolute;
@@ -2150,12 +2154,21 @@ a:hover.back-to-top {
 	transform: scale(1.2);
 	opacity: 50%;
   }
-  /* downlaod ic animation end */
+  /* main page app photo animation */
   .img-wrapper:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
 .img-wrapper img {
     transform: scale(1.0);
     transition: all 0.5s ease-out;
+}
+/* main page nav logo photo animation */
+.logo-image {
+	transition: all 0.5s ease-out;
+
+}
+.logo-image:hover {
+	transition: all 0.5s ease-out;
+	transform: scale(1.2) rotate(360deg);
 }
